@@ -1,0 +1,30 @@
+{
+  "IDMversion": "1.3 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "$comment": "Options for connecting microgrid components.",
+  "schema": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "bolt": { "$ref": "boltSize-schema.json#/schema" }
+        },
+        "required": [ "bolt" ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "terminal": { "$ref": "wireSizes-schema.json#/schema" }
+        },
+        "required": [ "terminal" ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "other": { "type": "string" }
+        },
+        "required": [ "other" ]
+      }
+    ]
+  }
+}
