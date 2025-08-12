@@ -7,6 +7,7 @@
       {
         "type": "object",
         "properties": {
+          "connectionType": { "const": "bolt" },
           "bolt": { "$ref": "boltSize-schema.json#/schema" }
         },
         "required": [ "bolt" ]
@@ -14,17 +15,35 @@
       {
         "type": "object",
         "properties": {
+          "connectionType": { "const": "terminal" },
           "terminal": { "$ref": "wireSizes-schema.json#/schema" }
         },
         "required": [ "terminal" ]
       },
+      { "$ref": "#definitions/plugAndSocket" },
+      {
+        "type": "array",
+        "items": { "$ref": "#definitions/plugAndSocket" }
+      },
       {
         "type": "object",
         "properties": {
+          "connectionType": { "const": "other" },
           "other": { "type": "string" }
         },
         "required": [ "other" ]
       }
     ]
+  },
+  "definintions": {
+    "plugAndSocket": {
+      "type": "object",
+      "properties": {
+        "connectionType": { "const": "plugAndSocket" },
+        "type": { "type": "string" },
+        "gender": { "type": "string" }
+      },
+      "required": [ "type", "gender" ]
+    }
   }
 }
