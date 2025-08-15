@@ -58,7 +58,7 @@
       "maxVoltageToGround": { "$ref": "voltageRating-schema.json#/schema" },
       "poleLocallyGrounded": { "$ref": "grounding-schema.json#/schema" },
       "groundWire": { "$ref": "PE-schema.json#/schema" },
-      "connector": { "type": "string" },
+      "connector": { "$ref": "connection-schema.json#/schema" },
       "prechargeProtection": {
         "type": "string",
         "enum": [ "provided", "required", "neither" ]
