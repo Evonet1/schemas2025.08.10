@@ -94,10 +94,9 @@
 
   "mechanical": {
     "dimensions": {
-      "length": 870,
-      "height": 480,
-      "width": 670,
-      "unit": "mm"
+      "length": "870mm",
+      "height": "480mm",
+      "width": "670mm"
     },
 
     "weight": {
