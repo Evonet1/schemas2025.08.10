@@ -32,6 +32,7 @@
       "poleLocallyGrounded":"Float",
       "groundWire":"required",
       "connector": {
+          "connectionType": "bolt",
           "bolt": "M8 (5/16\")"
       },
       "prechargeProtection":"neither"
@@ -58,10 +59,12 @@
       "groundWire":"offered",
       "connector": [
         {
+          "connectionType": "plugAndSocket",
           "type": "CCS1",
           "gender": "socket"
         },
         {
+          "connectionType": "plugAndSocket",
           "type": "CCS2",
           "gender": "socket"
         }
