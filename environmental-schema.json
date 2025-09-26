@@ -1,26 +1,27 @@
 {
-  "IDMversion": "1.3 2025-08-10",
+  "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "fileVersion": "1.0",
+  "fileDate":"2025-09-26",  
   "schema": {
     "type": "object",
     "properties": {
       "operatingTemperature": {
         "type": "object",
         "properties": {
-          "min": {
-            "type": "number"
-          },
-          "max": {
-            "type": "number"
-          },
+          "min": {"type": "number"},
+          "max": {"type": "number"},
           "unit": {
             "type": "string",
-            "enum": [ "C", "F" ]
+            "enum": [
+              "C",
+              "F"
+            ]
           }
         },
         "additionalProperties": false
       },
-      "operatingHumidity%": {
+      "operatingHumidity": {
         "type": "object",
         "$comment": "IEC 60068-2-11",
         "properties": {
@@ -60,8 +61,7 @@
           "13"
         ]
       },
-      "maximumOperatingAltitude": { "$ref": "dimensions-schema.json#/schema" },
-
+      "maximumOperatingAltitude": {"$ref": "dimensions-schema.json#/schema"},
       "coolingMethod": {
         "type": "string",
         "enum": [
@@ -71,8 +71,8 @@
           "none"
         ]
       },
-      "RoHScompliant": { "type": "boolean" },
-      "DomesticComponentRequirement": { "type": "boolean" }
+      "RoHScompliant": {"type": "boolean"},
+      "DomesticComponentRequirement": {"type": "boolean"}
     }
   }
 }

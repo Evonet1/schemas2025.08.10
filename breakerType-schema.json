@@ -1,18 +1,17 @@
 {
-  "IDMversion": "1.3 2025-08-10",
+  "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "These are the initial breaker types.  Manufacturers may add to this list.",
-  "schema": {
-    "type": "string"
-  },
+  "fileVersion": "1.0",
+  "fileDate":"2025-09-26",  
+  "schema": {"type": "string"},
   "initialValues": [
     "Thermal",
     "Thermal-magnetic",
     "Magnetic",
+    "Magnetic-hydraulic",
     "Thermal-magnetic-hydraulic",
     "Electronic",
     "Hybrid"
-
   ]
-
 }

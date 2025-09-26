@@ -1,18 +1,20 @@
 {
-  "IDMversion": "1.3 2025-08-10",
+  "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Reasons that a breaker might turn off.",
+  "fileVersion": "1.0",
+  "fileDate":"2025-09-26",  
   "schema": {
     "type": "object",
     "properties": {
-      "overCurrent": { "type": "boolean" },
-      "overVoltage": { "type": "boolean" },
-      "underVoltage": { "type": "boolean" },
-      "groundFault": { "type": "boolean" },
-      "arcFault": { "type": "boolean" },
-      "manualOperation": { "type": "boolean" },
-      "phaseImbalance": { "type": "boolean" },
-      "externalSolenoid": { "type": "boolean" },
+      "overCurrent": {"type": "boolean"},
+      "overVoltage": {"type": "boolean"},
+      "underVoltage": {"type": "boolean"},
+      "groundFault": {"type": "boolean"},
+      "arcFault": {"type": "boolean"},
+      "manualOperation": {"type": "boolean"},
+      "phaseImbalance": {"type": "boolean"},
+      "externalSolenoid": {"type": "boolean"},
       "acronym": {
         "type": "string",
         "enum": [
@@ -26,12 +28,8 @@
           "MCCB",
           "AFCB",
           "ELCB"
-
         ]
-
       }
-
     }
   }
-
 }
